@@ -1,0 +1,24 @@
+version: '3'
+services:
+  request:
+    build: ./docker/request
+    volumes:
+      - ./docker/request:/usr/src/app
+    ports:
+      - 5001:5000
+    depends_on:
+    - website
+    networks:
+      - myappnetwork
+  website:
+    build: ./docker/website
+    volumes:
+      - ./docker/request:/usr/src/app
+    ports:
+      - 5002:5000
+    networks:
+      - myappnetwork
+  
+networks:
+    myappnetwork:
+  

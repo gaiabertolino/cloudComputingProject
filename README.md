@@ -1,1 +1,1 @@
-# cloudComputingProject
+This project constitutes the final assignment for the course on Distributed Systems and Cloud Computing in the first year of the Master's program in Computer Engineering. The aim of the project was to develop an online interface employing Docker, enabling users to submit datasets for the application of frequent itemset mining algorithms
